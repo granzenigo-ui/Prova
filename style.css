@@ -7,6 +7,9 @@ body {
         }       
 
         header {
+          background: url('ViaPrione2.png') #E69D11 no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
             color: black;
             text-align: center;
             padding: 20px;
