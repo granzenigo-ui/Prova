@@ -9,7 +9,6 @@
 event.waitUntil(\
 caches.open("menu-cache").then(function(cache) \{\
 return cache.addAll([\
-"index.html",\
 "IMG_3114-ai-brush-removebg-jnum2b6s.png"\
 ]);\
 \})\
