@@ -148,4 +148,118 @@
     </script>
 
 </body>
+</html>            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 4px;
+        }
+
+        footer {
+            background: #595959;
+            color: #F5A627;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="IMG_3114-ai-brush-removebg-jnum2b6s.png" alt="Logo WOW Panigacci">
+        <h1 id="title">Menu</h1>
+        <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2 id="antipasti-title">Antipasti</h2>
+            <div class="item">
+                <span id="Torchiara olio e grana">Torchiara olio e grana</span>
+                <span>€7</span>
+            </div>
+            <div class="item">
+                <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+                <span>€7</span>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="primi-title">Panigacci</h2>
+            <div class="item">
+                <span id="panigacci">Panigacci a volontà</span>
+                <span>€5 a persona</span>
+            </div>
+            <div class="item">
+                <span id="Tagliere piccolo">Tagliere di salumi misto, consigliato per due persone</span>
+                <span>€12</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        I prodotti contrassegnati da * potrebbero essere surgelati. \n\r
+        Per la consultazione degli allergeni, rivolgersi al personale.
+    </footer>
+
+    <footer>
+        © 2026 WOW Panigacci
+    </footer>
+
+
+    <script>
+        let currentLang = "it";
+
+        function toggleLang() {
+            if (currentLang === "it") {
+                document.getElementById("title").innerText = "Menu";
+                document.getElementById("antipasti-title").innerText = "Starters";
+                document.getElementById("primi-title").innerText = "First Courses";
+                document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
+                document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
+                document.getElementById("panigacci").innerText = "Panigacci";
+                document.getElementById("Tagliere piccolo").innerText = "Little ham";
+                currentLang = "en";
+            } else {
+                document.getElementById("title").innerText = "Menu";
+                document.getElementById("antipasti-title").innerText = "Antipasti";
+                document.getElementById("primi-title").innerText = "Panigacci";
+                document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
+                document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
+                document.getElementById("panigacci").innerText = "Panigacci";
+                document.getElementById("Tagliere piccolo").innerText = "Tagliere piccolo";
+                currentLang = "it";
+            }
+        }
+
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+
+</body>
 </html>
