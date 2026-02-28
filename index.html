@@ -12,12 +12,12 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            background: white;
             color: #333;
         }
 
         header {
-            background: #111;
+            background: #F5A627;
             color: white;
             text-align: center;
             padding: 20px;
@@ -30,7 +30,7 @@
 
         .lang-btn {
             background: white;
-            color: black;
+            color: #F5A627;
             border: none;
             padding: 6px 12px;
             cursor: pointer;
@@ -63,7 +63,7 @@
 
         footer {
             background: #111;
-            color: white;
+            color: black;
             text-align: center;
             padding: 15px;
             font-size: 12px;
@@ -74,7 +74,7 @@
 <body>
 
     <header>
-        <img src="logo.png" alt="Logo WOW Panigacci">
+        <img src="IMG_3114-ai-brush-removebg-jnum2b6s.png" alt="Logo WOW Panigacci">
         <h1 id="title">Menu</h1>
         <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
     </header>
@@ -84,15 +84,21 @@
         <section>
             <h2 id="antipasti-title">Antipasti</h2>
             <div class="item">
-                <span id="bruschetta">Bruschette miste</span>
-                <span>€6</span>
+                <span id="Torchiara olio e grana">Torchiara olio e grana</span>
+                <span>€7</span>
+                <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+                <span>€7</span>
             </div>
         </section>
 
         <section>
-            <h2 id="primi-title">Primi</h2>
+            <h2 id="primi-title">Panigacci</h2>
             <div class="item">
-                <span id="carbonara">Spaghetti alla Carbonara</span>
+                <span id="panigacci">Panigacci a volontà</span>
+                <span>€5 a persona</span>
+            </div>
+            <div class="item">
+                <span id="Tagliere piccolo">Tagliere di salumi misto, consigliato per due persone</span>
                 <span>€12</span>
             </div>
         </section>
@@ -100,7 +106,7 @@
     </main>
 
     <footer>
-        © 2026 Nome Locale
+        © 2026 WOW Panigacci
     </footer>
 
     <script>
@@ -111,15 +117,19 @@
                 document.getElementById("title").innerText = "Menu";
                 document.getElementById("antipasti-title").innerText = "Starters";
                 document.getElementById("primi-title").innerText = "First Courses";
-                document.getElementById("bruschetta").innerText = "Mixed Bruschetta";
-                document.getElementById("carbonara").innerText = "Spaghetti Carbonara";
+                document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
+                document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
+                document.getElementById("panigacci").innerText = "Panigacci";
+                document.getElementById("Tagliere piccolo").innerText = "Little ham";
                 currentLang = "en";
             } else {
                 document.getElementById("title").innerText = "Menu";
                 document.getElementById("antipasti-title").innerText = "Antipasti";
-                document.getElementById("primi-title").innerText = "Primi";
-                document.getElementById("bruschetta").innerText = "Bruschette miste";
-                document.getElementById("carbonara").innerText = "Spaghetti alla Carbonara";
+                document.getElementById("primi-title").innerText = "Panigacci";
+                document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
+                document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
+                document.getElementById("panigacci").innerText = "Panigacci";
+                document.getElementById("Tagliere piccolo").innerText = "Tagliere piccolo";
                 currentLang = "it";
             }
         }
