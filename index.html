@@ -1,111 +1,133 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WOW Panigacci - Menu</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#F5A627">
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f4f4f4;
-color: #333;
-}
-header {
-background: #111;
-color: white;
-text-align: center;
-padding: 20px;
-}
-header img {
-width: 100px;
-margin-bottom: 10px;
-}
-.lang-btn {
-background: white;
-color: black;
-border: none;
-padding: 6px 12px;
-cursor: pointer;
-font-size: 12px;
-margin-top: 10px;
-}
-.container {
-max-width: 800px;
-margin: auto;
-padding: 20px;
-}
-.section {
-margin-bottom: 30px;
-}
-h2 {
-border-bottom: 2px solid #ddd;
-padding-bottom: 5px;}
-.item {
-display: flex;
-justify-content: space-between;
-margin: 8px 0;
-border-bottom: 1px dashed #ccc;
-padding-bottom: 4px;
-}
-footer {
-background: #111;
-color: white;
-text-align: center;
-padding: 15px;
-font-size: 12px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Panigacci - Menu</title>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#F5A627">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .lang-btn {
+            background: white;
+            color: black;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 4px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-<img src="logo.png" alt="Logo">
-<h1 id="title">Menu</h1>
-<button class="lang-btn" onclick="toggleLang()">EN / IT</button>
-</header>
-<div class="container">
-<div class="section">
-<h2 id="antipasti-title">Antipasti</h2>
-<div class="item">
-<span id="bruschetta">Bruschette miste</span>
-<span>€6</span>
-</div>
-</div>
-<div class="section">
-<h2 id="primi-title">Primi</h2>
-<div class="item">
-<span id="carbonara">Spaghetti alla Carbonara</span>
-<span>€12</span>
-</div>
-</div>
-</div>
-<footer>
-© 2026 Nome Locale
-</footer>
-<script>
-let currentLang = "it";
-function toggleLang() {
-if (currentLang === "it") {document.getElementById("title").innerText = "Menu";
-document.getElementById("antipasti-title").innerText = "Starters";
-document.getElementById("primi-title").innerText = "First Courses";
-document.getElementById("bruschetta").innerText = "Mixed Bruschetta";
-document.getElementById("carbonara").innerText = "Spaghetti Carbonara";
-currentLang = "en";
-} else {
-document.getElementById("title").innerText = "Menu";
-document.getElementById("antipasti-title").innerText = "Antipasti";
-document.getElementById("primi-title").innerText = "Primi";
-document.getElementById("bruschetta").innerText = "Bruschette miste";
-document.getElementById("carbonara").innerText = "Spaghetti alla Carbonara";
-currentLang = "it";
-}
-}
-if ("serviceWorker" in navigator) {
-navigator.serviceWorker.register("service-worker.js");
-}
-</script>
+        <img src="logo.png" alt="Logo WOW Panigacci">
+        <h1 id="title">Menu</h1>
+        <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2 id="antipasti-title">Antipasti</h2>
+            <div class="item">
+                <span id="bruschetta">Bruschette miste</span>
+                <span>€6</span>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="primi-title">Primi</h2>
+            <div class="item">
+                <span id="carbonara">Spaghetti alla Carbonara</span>
+                <span>€12</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Nome Locale
+    </footer>
+
+    <script>
+        let currentLang = "it";
+
+        function toggleLang() {
+            if (currentLang === "it") {
+                document.getElementById("title").innerText = "Menu";
+                document.getElementById("antipasti-title").innerText = "Starters";
+                document.getElementById("primi-title").innerText = "First Courses";
+                document.getElementById("bruschetta").innerText = "Mixed Bruschetta";
+                document.getElementById("carbonara").innerText = "Spaghetti Carbonara";
+                currentLang = "en";
+            } else {
+                document.getElementById("title").innerText = "Menu";
+                document.getElementById("antipasti-title").innerText = "Antipasti";
+                document.getElementById("primi-title").innerText = "Primi";
+                document.getElementById("bruschetta").innerText = "Bruschette miste";
+                document.getElementById("carbonara").innerText = "Spaghetti alla Carbonara";
+                currentLang = "it";
+            }
+        }
+
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+
 </body>
 </html>
