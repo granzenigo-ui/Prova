@@ -2,4 +2,59 @@ body {
   background: url('Menù.png') #A98436 no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+            margin: 0;
+            font-family: Courier, sans-serif;
+        }       
+
+        header {
+            background: #F59600;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .lang-btn {
+            background: #F59600;
+            color: #595959;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 4px;
+        }
+
+        footer {
+            background: #595959;
+            color: #F5A627;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
