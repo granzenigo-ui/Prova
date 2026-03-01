@@ -61,3 +61,30 @@ body {
             font-size: 12px;
         }
 }
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: #F59600;
+    color: #595959;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.tab-btn.active {
+    background: #595959;
+    color: #F5A627;
+}
+
+.tab-content .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
