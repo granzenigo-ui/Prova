@@ -95,11 +95,25 @@
             navigator.serviceWorker.register("service-worker.js");
         }
 
-        function openTab(tabName) {
-    document.getElementById("antipasti").style.display = "none";
-    document.getElementById("primi").style.display = "none";
+        function openTab(event, tabName) {
 
-    document.getElementById(tabName).style.display = "block";
+    // Nascondo tutti i contenuti
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Rimuovo active dai bottoni
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Mostro la tab selezionata
+    document.getElementById(tabName).classList.add('active');
+
+    // Evidenzio il bottone cliccato
+    event.currentTarget.classList.add('active');
 }
     </script>
 
