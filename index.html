@@ -18,33 +18,40 @@
         <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
     </header>
 
-    <main class="container">
+    <div>
+    <button onclick="openTab('antipasti')">Antipasti</button>
+    <button onclick="openTab('primi')">Panigacci</button>
+</div>
 
-        <section>
-            <h2 id="antipasti-title">Antipasti</h2>
-            <div class="item">
-                <span id="Torchiara olio e grana">Torchiara olio e grana</span>
-                <span>€7</span>
-            </div>
-            <div class="item">
-                <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
-                <span>€7</span>
-            </div>
-        </section>
+<!-- TAB 1 -->
+<div id="antipasti">
+    <h2 id="antipasti-title">Antipasti</h2>
 
-        <section>
-            <h2 id="primi-title">Panigacci</h2>
-            <div class="item">
-                <span id="panigacci">Panigacci a volontà</span>
-                <span>€5 a persona</span>
-            </div>
-            <div class="item">
-                <span id="Tagliere piccolo">Tagliere di salumi misto, consigliato per due persone</span>
-                <span>€12</span>
-            </div>
-        </section>
+    <div class="item">
+        <span id="Torchiara olio e grana">Torchiara olio e grana</span>
+        <span>€7</span>
+    </div>
 
-    </main>
+    <div class="item">
+        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+        <span>€7</span>
+    </div>
+</div>
+
+<!-- TAB 2 -->
+<div id="primi" style="display:none;">
+    <h2 id="primi-title">Panigacci</h2>
+
+    <div class="item">
+        <span id="panigacci">Panigacci a volontà</span>
+        <span>€5 a persona</span>
+    </div>
+
+    <div class="item">
+        <span id="Tagliere piccolo">Tagliere di salumi misto, consigliato per due persone</span>
+        <span>€12</span>
+    </div>
+</div>
 
     <footer>
         I prodotti contrassegnati da * potrebbero essere surgelati.
@@ -87,6 +94,13 @@
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("service-worker.js");
         }
+
+        function openTab(tabName) {
+    document.getElementById("antipasti").style.display = "none";
+    document.getElementById("primi").style.display = "none";
+
+    document.getElementById(tabName).style.display = "block";
+}
     </script>
 
 </body>
