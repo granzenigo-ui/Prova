@@ -20,8 +20,11 @@
 <div class="container">
     <div class="tab-buttons">
         <button onclick="openTab('antipasti', this)">Antipasti</button>
-        <button onclick="openTab('primi', this)">Panigacci</button>
+        <button onclick="openTab('primi', this)">Primi piatti</button>
+        <button onclick="openTab('panigacci', this)">Panigacci</button>
         <button onclick="openTab('dolci', this)">Dolci</button>
+        <button onclick="openTab('bevande', this)">Bevande</button>
+        <button onclick="openTab('vini', this)">Vini</button>
     </div>
 
 <!-- TAB Antipasti -->
@@ -54,9 +57,26 @@
     </div>
 </div>
 
-    <!-- TAB 3 -->
+    
+
+<!-- TAB Panigacci -->
+<div id="panigacci" class="tab-content active">
+    <h2 id="panigacci-title">Panigacci</h2>
+
+    <div class="item">
+        <span id="Torchiara olio e grana">Torchiara olio e grana</span>
+        <span>€10</span> 
+    </div>
+
+    <div class="item">
+        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+        <span>€10</span>
+    </div>
+</div>
+
+    <!-- TAB Dolci -->
 <div id="dolci" class="tab-content" style="display:none;">
-    <h2 id="antipasti-title">Dolci</h2>
+    <h2 id="dolci-title">Dolci</h2>
 
     <div class="item">
         <span id="Gelato alla vaniglia">Gelato alla vaniglia</span>
@@ -71,6 +91,36 @@
     <div class="item">
         <span id="Coppa WOW">Coppa WOW</span>
         <span>€7</span>
+    </div>
+</div>
+
+<!-- TAB Bevande -->
+<div id="bevande" class="tab-content active">
+    <h2 id="bevande-title">Bevande</h2>
+
+    <div class="item">
+        <span id="Torchiara olio e grana">Torchiara olio e grana</span>
+        <span>€10</span> 
+    </div>
+
+    <div class="item">
+        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+        <span>€10</span>
+    </div>
+</div>
+
+<!-- TAB Vini -->
+<div id="vini" class="tab-content active">
+    <h2 id="vini-title">Vini</h2>
+
+    <div class="item">
+        <span id="Torchiara olio e grana">Torchiara olio e grana</span>
+        <span>€10</span> 
+    </div>
+
+    <div class="item">
+        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+        <span>€10</span>
     </div>
 </div>
 
