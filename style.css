@@ -98,7 +98,7 @@ footer {
     margin-bottom: 20px; /* spazio tra bottoni e tab content */
 }*/
 .tab-buttons {
-    display: flex;
+   display: flex;
     flex-wrap: wrap;           /* permette più righe */
     justify-content: center;   /* centra i bottoni in ogni riga */
     row-gap: 15px;             /* spazio verticale tra le righe */
@@ -107,8 +107,9 @@ footer {
 }
 
 .tab-buttons > button {
-     width: 180px;              /* tutti i bottoni della stessa larghezza */
-    height: 50px;              /* altezza fissa per uniformità */
+     flex: 0 0 calc(50% - 10px); /* due bottoni per riga considerando il gap */
+    max-width: 200px;            /* opzionale: dimensione massima */
+    height: 50px;
     text-align: center;
     font-family: Courier, sans-serif;
     background: linear-gradient(135deg, #FFA500, #E69D11);
@@ -116,11 +117,12 @@ footer {
     border-radius: 25px;
     color: black;
     font-size: 23px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
     display: flex;
     align-items: center;       /* centra il testo verticalmente */
     justify-content: center;   /* centra il testo orizzontalmente */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
     /*padding: 5px 7px;
