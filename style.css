@@ -91,6 +91,8 @@ footer {
     box-sizing: border-box;
     margin-bottom: 30px;
     overflow-y: auto; /* scroll solo se troppo lungo */
+
+     flex-shrink: 0;
 }
 
 /* Bottoni dei tab */
