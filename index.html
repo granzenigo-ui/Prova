@@ -25,7 +25,7 @@
 
 <!-- TAB Antipasti -->
 <div id="antipasti" class="tab-content active">
-    <h2 id="antipasti-title">Antipasti e primi piatti</h2>
+    <h2 id="antipasti-title">Antipasti</h2>
 
     <div class="item">
         <span id="Torchiara olio e grana">Torchiara olio e grana</span>
@@ -36,7 +36,7 @@
         <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
         <span class="prezzo">€10</span>
     </div>
-
+    <h2 id="primi-title">Primi piatti</h2>
     <div class="item">
         <span id="Tricolore">Tricolore di Panigacci</span>
         <span class="prezzo">€10</span>
@@ -176,13 +176,13 @@
 
 <!-- TAB Bevande -->
 <div id="bevande" class="tab-content" style="display:none;">
-    <h2 id="bevande-title">Bevande e vini</h2>
+    <h2 id="bevande-title">Bevande</h2>
 
     <div class="item">
         <span id="Torchiara olio e grana">Torchiara olio e grana</span>
         <span class="prezzo">€10</span> 
     </div>
-
+<h2 id="vini-title">Vini</h2>
     <div class="item">
         <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
         <span class="prezzo">€10</span>
@@ -209,17 +209,21 @@
         function toggleLang() {
             if (currentLang === "it") { //inglese
                 document.getElementById("title").innerText = "Menù";
-                document.getElementById("antipasti-title").innerText = "Starters & first courses";
+                document.getElementById("antipasti-title").innerText = "Starters";
+                document.getElementById("primi-title").innerText = "First corurses";
                 document.getElementById("dolci-title").innerText = "Dessert";
                 document.getElementById("panigacci-title").innerText = "Panigacci from Podenzana";
-                document.getElementById("bevande-title").innerText = "Drinks & wine";
+                document.getElementById("bevande-title").innerText = "Drinks";
+                document.getElementById("vini-title").innerText = "Wine";
                 currentLang = "en";
             } else { 
                 document.getElementById("title").innerText = "Menù";
-                document.getElementById("antipasti-title").innerText = "Antipasti e primi piatti";
+                document.getElementById("antipasti-title").innerText = "Antipasti";
+                document.getElementById("primi-title").innerText = "Primi piatti";
                 document.getElementById("dolci-title").innerText = "Dolci";
                 document.getElementById("panigacci-title").innerText = "Panigacci di Podenzana";
-                document.getElementById("bevande-title").innerText = "Bevande e vini";
+                document.getElementById("bevande-title").innerText = "Bevande";
+                document.getElementById("vini-title").innerText = "Vini";
                 currentLang = "it";
             }
         }
