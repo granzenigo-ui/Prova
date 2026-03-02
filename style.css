@@ -91,7 +91,7 @@ body {
 }
 
 * Stile base dei bottoni */
-.tab-buttons button {
+.tab-buttons > button {
   
   font-family: Courier, sans-serif;
     background: linear-gradient(135deg, #E69D11, #FFA500); /* sfumatura gialla/arancione */
