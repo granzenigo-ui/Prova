@@ -66,6 +66,10 @@ h2 {
     padding-bottom: 4px;
 }
 
+span.prezzo {
+    font-size: 14px;
+}
+
 /* Footer fisso in basso */
 footer {
     color: black;
@@ -121,3 +125,4 @@ footer {
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
     transform: scale(1.05);
 }
+
