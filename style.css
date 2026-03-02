@@ -89,13 +89,22 @@ footer {
 }
 
 /* Bottoni dei tab */
-.tab-buttons {
+/*.tab-buttons {
     display: flex;
     justify-content: center;
     gap: 3px;
     padding: 5px 0;
     flex-shrink: 0;
     margin-bottom: 20px; /* spazio tra bottoni e tab content */
+}*/
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px 0;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* permette ai bottoni di andare a capo */
 }
 
 .tab-buttons > button {
