@@ -46,12 +46,13 @@ body {
         }
 
         .item {
-            display: flex;
-            justify-content: space-between;
-            margin: 8px 0;
-            border-bottom: 1px dashed #ccc;
-            padding-bottom: 4px;
-        }
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px; /* sposta tutto leggermente verso il centro */
+    margin: 8px 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 4px;
+}
 
         footer {
             color: black;
