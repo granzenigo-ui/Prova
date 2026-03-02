@@ -99,12 +99,11 @@ footer {
 }*/
 .tab-buttons {
     display: flex;
-    justify-content: center;
-    gap: 3px;
+    justify-content: center; /* centra i bottoni orizzontalmente */
+    flex-wrap: wrap;         /* permette di andare su più righe */
+    gap: 10px 20px;          /* 10px verticale, 20px orizzontale */
     padding: 5px 0;
-    flex-shrink: 0;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* permette ai bottoni di andare a capo */
 }
 
 .tab-buttons > button {
@@ -119,6 +118,9 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    flex: 0 1 calc(50% - 20px); /* due bottoni per riga meno gap */
+    max-width: 200px;            /* opzionale: limita la larghezza */
+    text-align: center;
 }
 
 .tab-buttons > button:hover {
