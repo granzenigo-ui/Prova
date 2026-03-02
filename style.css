@@ -83,7 +83,7 @@ span.prezzo {
 footer {
     color: black;
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.35);
     flex-shrink: 0;
@@ -111,7 +111,7 @@ footer {
 }
 
 .tab-buttons > button {
-    font-family: Courier, sans-serif;
+    font-family: Decima, sans-serif;
     /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
     background: rgba(230, 157, 17, 0.75);
     border: none;
