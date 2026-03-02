@@ -81,7 +81,7 @@ footer {
 .tab-content {
     flex: 1; /* occupa tutto lo spazio disponibile */
     width: 100%;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.45);
     padding: 20px 40px; /* padding verticale + orizzontale */
     box-sizing: border-box;
     margin-bottom: 30px;
