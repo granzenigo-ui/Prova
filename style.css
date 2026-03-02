@@ -1,4 +1,11 @@
-/* Impostazioni base */
+/*body {
+  background: url('ViaPrione2.png') #E69D11 no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+            margin: 0;
+            font-family: Courier, sans-serif;
+        } */   
+
 html, body {
     height: 100%;
     margin: 0;
@@ -9,132 +16,111 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: Courier, sans-serif;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+        header {
+          background: url('ViaPrione2.png') #E69D11 no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
 
-/* Header */
-header {
-    background: url('ViaPrione2.png') #E69D11 no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    flex-shrink: 0; /* non si riduce */
-}
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
 
-header img {
-    width: 100px;
-    margin-bottom: 10px;
-}
+        .lang-btn {
+            background: #E69D11;
+            color: #595959;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+        }
 
-.lang-btn {
-    background: #E69D11;
-    color: #595959;
-    border: none;
-    padding: 6px 12px;
-    cursor: pointer;
-    font-size: 12px;
-    margin-top: 10px;
-}
+       /* .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }*/
 
-/* Container principale */
 .container {
     margin: auto;
     padding: 20px;
-    flex: 1;
+
+    flex: 1; 
 }
 
-/* Sezioni e titoli */
-section {
-    margin-bottom: 30px;
-}
+        section {
+            margin-bottom: 30px;
+        }
 
-h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-}
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
 
-/* Item menu */
-.item {
+        .item {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
+    padding-right: 20px; /* sposta tutto leggermente verso il centro */
     margin: 8px 0;
     border-bottom: 1px dashed #ccc;
     padding-bottom: 4px;
 }
 
-/* Footer fisso in basso */
-footer {
-    color: black;
-    text-align: center;
-    font-size: 8px;
+        footer {
+            color: black;
+            text-align: center;
+            padding: 15px;
+            font-size: 8px;
+           background: rgba(255, 255, 255, 0.35); 
     padding: 20px;
-    background: rgba(255, 255, 255, 0.35);
-    flex-shrink: 0;
-}
+        }
 
-/* Tab content full-width */
 .tab-content {
-    flex: 1; /* occupa tutto lo spazio disponibile */
-    width: 100%;
-    background: rgba(255, 255, 255, 0.45);
+  width: 100%;
+    background: rgba(255, 255, 255, 0.35);
     padding: 20px 40px; /* padding verticale + orizzontale */
     box-sizing: border-box;
-    margin-bottom: 30px;
-    overflow-y: auto; /* scroll solo se troppo lungo */
+    margin-bottom: 30px; /* spazio sotto il div del tab */
 }
 
-/* Bottoni dei tab */
-.tab-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    padding: 5px 0;
-    flex-shrink: 0;
-    margin-bottom: 20px; /* spazio tra bottoni e tab content */
-}
-/*.tab-buttons {
-   display: flex;
-    flex-wrap: wrap;           /* permette più righe */
-    justify-content: center;   /* centra i bottoni in ogni riga */
-    row-gap: 15px;             /* spazio verticale tra le righe */
-    column-gap: 20px;          /* spazio orizzontale tra i bottoni */
-    margin-bottom: 20px;
-}  */
-
+* Stile base dei bottoni */
 .tab-buttons > button {
-    max-width: 180px;            /* opzionale: dimensione massima */
-    height: 50px;
-    text-align: center;
-    font-family: Courier, sans-serif;
-    background: linear-gradient(135deg, #FFA500, #E69D11);
-    border: none;
-    border-radius: 25px;
+  
+  font-family: Courier, sans-serif;
+    background: linear-gradient(135deg, #E69D11, #FFA500); /* sfumatura gialla/arancione */
+    border-radius: 25px;           /* arrotondati */
     color: black;
-    font-size: 23px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;       /* centra il testo verticalmente */
-    justify-content: center;   /* centra il testo orizzontalmente */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
+    padding: 10px 25px;
+    font-size: 16px
+    margin: 0 10px;                /* distanza tra bottoni */
 }
 
-    /*padding: 5px 7px;
-    margin: 0 8px;*/
+/* Pulsante attivo (quando il tab è aperto) */
+.tab-buttons button.active {
+  
+  font-family: Courier, sans-serif;
+  background: #E69D11;border-radius: 25px;           /* arrotondati */
+    color: black;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 16px
+    margin: 0 10px;                /* distanza tra bottoni */
 }
-
-.tab-buttons > button:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
-}
-
-/* Bottoni attivi */
-.tab-buttons > button.active {
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    /*background: linear-gradient(135deg, #FFA500, #E69D11);
+    margin: 0 10px;                /* distanza tra bottoni 
+    border-radius: 25px;           /* arrotondati 
+    font-weight: bold;
+  padding: 10px 25px;
     transform: scale(1.05);
-}
+    font-size: 16px;
+}*/
