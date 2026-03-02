@@ -100,10 +100,10 @@ footer {
 
 .tab-buttons > button {
     font-family: Courier, sans-serif;
-    background: linear-gradient(135deg, #030303, #595959);
+    background: linear-gradient(135deg, #FFA500, #E69D11);
     border: none;
     border-radius: 25px;
-    color: #E69D11;
+    color: black;
     padding: 10px 25px;
     font-size: 16px;
     font-weight: bold;
@@ -120,8 +120,6 @@ footer {
 
 /* Bottoni attivi */
 .tab-buttons > button.active {
-    background: linear-gradient(135deg, #FFA500, #E69D11);
-    color: black
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
     transform: scale(1.05);
 }
