@@ -24,28 +24,27 @@
         <button onclick="openTab('dolci', this)">Dolci</button>
     </div>
 
-<!-- TAB 1 -->
+<!-- TAB Antipasti -->
 <div id="antipasti" class="tab-content active">
     <h2 id="antipasti-title">Antipasti</h2>
 
     <div class="item">
         <span id="Torchiara olio e grana">Torchiara olio e grana</span>
-        
-        <span>€7</span>
+        <span>€10</span> 
     </div>
 
     <div class="item">
         <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
-        <span>€7</span>
+        <span>€10</span>
     </div>
 </div>
 
 <!-- TAB 2 -->
 <div id="primi" class="tab-content" style="display:none;">
-    <h2 id="primi-title">Panigacci</h2>
+    <h2 id="primi-title">Primi piatti</h2>
 
     <div class="item">
-        <span id="panigacci">Panigacci a volontà</span>
+        <span id="tricolore">Panigacci a volontà</span>
         <span>€5 a persona</span>
     </div>
 
@@ -93,7 +92,7 @@
                 document.getElementById("primi-title").innerText = "First Courses";
                 document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
                 document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
-                document.getElementById("panigacci").innerText = "Panigacci";
+                document.getElementById("tricolore").innerText = "Tricolore di Panigacci";
                 document.getElementById("Tagliere piccolo").innerText = "Little ham";
                 currentLang = "en";
             } else {
@@ -102,7 +101,7 @@
                 document.getElementById("primi-title").innerText = "Panigacci";
                 document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
                 document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
-                document.getElementById("panigacci").innerText = "Panigacci";
+                document.getElementById("tricolore").innerText = "Tricolore di Panigacci<br>Panigacci serviti con olio e grana, pesto e sugo di funghi";
                 document.getElementById("Tagliere piccolo").innerText = "Tagliere piccolo";
                 currentLang = "it";
             }
