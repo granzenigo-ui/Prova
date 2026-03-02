@@ -100,7 +100,6 @@ body {
     padding: 10px 25px;
     cursor: pointer;
     font-size: 16px;
-    transition: all 0.3s ease;     /* animazioni dolci */
     box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* leggero rilievo */
     margin: 0 10px;                /* distanza tra bottoni */
 }
@@ -115,6 +114,11 @@ body {
 /* Pulsante attivo (quando il tab è aperto) */
 .tab-buttons button.active {
     background: linear-gradient(135deg, #FFA500, #E69D11);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* leggero rilievo */
+    margin: 0 10px;                /* distanza tra bottoni */
+    border-radius: 25px;           /* arrotondati */
+    font-weight: bold;
+  padding: 10px 25px;
     transform: scale(1.05);
+    font-size: 16px;
 }
