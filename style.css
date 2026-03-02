@@ -84,15 +84,13 @@ footer {
 
 /* Tab content full-width */
 .tab-content {
-    /*flex: 1; /* occupa tutto lo spazio disponibile */
+    flex: 1; /* occupa tutto lo spazio disponibile */
     width: 100%;
     background: rgba(255, 255, 255, 0.45);
     padding: 20px 40px; /* padding verticale + orizzontale */
     box-sizing: border-box;
     margin-bottom: 30px;
     overflow-y: auto; /* scroll solo se troppo lungo */
-
-     flex-shrink: 0;
 }
 
 /* Bottoni dei tab */
@@ -108,7 +106,7 @@ footer {
 .tab-buttons > button {
     font-family: Courier, sans-serif;
     /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
-    background: rgba(230, 157, 17, 0.65);
+    background: rgba(230, 157, 17, 0.75);
     border: none;
     border-radius: 25px;
     color: black;
