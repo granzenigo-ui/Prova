@@ -52,8 +52,6 @@ body {
     margin: 8px 0;
     border-bottom: 1px dashed #ccc;
     padding-bottom: 4px;
-    background: rgba(255, 255, 255, 0.75); /* trasparenza */
-    border-radius: 8px;
 }
 
         footer {
@@ -61,4 +59,13 @@ body {
             text-align: center;
             padding: 15px;
             font-size: 12px;
+           background: rgba(255, 255, 255, 0.55); /* meno opaco */
+    padding: 20px;
+    border-radius: 15px;
         }
+
+.tab-content {
+    background: rgba(255, 255, 255, 0.55); /* meno opaco */
+    padding: 20px;
+    border-radius: 15px;
+}
