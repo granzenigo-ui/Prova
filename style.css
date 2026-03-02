@@ -1,11 +1,26 @@
-body {
+/*body {
   background: url('ViaPrione2.png') #E69D11 no-repeat;
   background-attachment: fixed;
   background-size: cover;
             margin: 0;
             font-family: Courier, sans-serif;
-        }       
+        } */   
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: url('ViaPrione2.png') #E69D11 no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Courier, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
         header {
           background: url('ViaPrione2.png') #E69D11 no-repeat;
   background-attachment: fixed;
@@ -30,11 +45,19 @@ body {
             margin-top: 10px;
         }
 
-        .container {
+       /* .container {
             max-width: 800px;
             margin: auto;
             padding: 20px;
-        }
+        }*/
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+    flex: 1; 
+}
 
         section {
             margin-bottom: 30px;
