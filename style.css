@@ -99,28 +99,32 @@ footer {
 }*/
 .tab-buttons {
     display: flex;
-    justify-content: center; /* centra i bottoni orizzontalmente */
-    flex-wrap: wrap;         /* permette di andare su più righe */
-    gap: 10px 20px;          /* 10px verticale, 20px orizzontale */
-    padding: 5px 0;
+    flex-wrap: wrap;           /* permette più righe */
+    justify-content: center;   /* centra i bottoni in ogni riga */
+    row-gap: 15px;             /* spazio verticale tra le righe */
+    column-gap: 20px;          /* spazio orizzontale tra i bottoni */
     margin-bottom: 20px;
 }
 
 .tab-buttons > button {
+     width: 180px;              /* tutti i bottoni della stessa larghezza */
+    height: 50px;              /* altezza fissa per uniformità */
+    text-align: center;
     font-family: Courier, sans-serif;
     background: linear-gradient(135deg, #FFA500, #E69D11);
     border: none;
     border-radius: 25px;
     color: black;
-    padding: 5px 7px;
     font-size: 23px;
-    margin: 0 8px;
-    cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    flex: 0 1 calc(50% - 20px); /* due bottoni per riga meno gap */
-    max-width: 200px;            /* opzionale: limita la larghezza */
-    text-align: center;
+    display: flex;
+    align-items: center;       /* centra il testo verticalmente */
+    justify-content: center;   /* centra il testo orizzontalmente */
+}
+
+    /*padding: 5px 7px;
+    margin: 0 8px;*/
 }
 
 .tab-buttons > button:hover {
