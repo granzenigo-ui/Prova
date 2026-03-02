@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOW Panigacci - Menu</title>
-
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#E69D11">
 </head>
@@ -203,23 +202,22 @@
         let currentLang = "it";
 
         function toggleLang() {
-            if (currentLang === "it") {
-                document.getElementById("title").innerText = "Menu";
-                document.getElementById("antipasti-title").innerText = "Starters";
-                document.getElementById("primi-title").innerText = "First Courses";
-                document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
-                document.getElementById("Torchiara olio e grana e pesto").innerText = "Tricolore di Panigacci. \n Panigacci serviti con olio e grana, pesto e sugo di funghi";
-                document.getElementById("tricolore").innerText = "Tricolore di Panigacci";
-                document.getElementById("Tagliere piccolo").innerText = "Little ham";
+            if (currentLang === "it") { //inglese
+                document.getElementById("title").innerText = "Menù";
+                document.getElementById("antipasti-title").innerText = "Starters & first courses";
+                document.getElementById("dolci-title").innerText = "Dessert";
+                document.getElementById("panigacci-title").innerText = "Panigacci from Podenzana";
+                
+                document.getElementById("bevande-title").innerText = "Drinks & wine";
                 currentLang = "en";
-            } else {
-                document.getElementById("title").innerText = "Menu";
+            } else { /*Italiano
+                document.getElementById("title").innerText = "Menù";
                 document.getElementById("antipasti-title").innerText = "Antipasti";
                 document.getElementById("primi-title").innerText = "Primi piatti";
                 document.getElementById("Torchiara olio e grana").innerText = "Torchiara olio e grana";
                 document.getElementById("Torchiara olio e grana e pesto").innerText = "Torchiara olio e grana e pesto";
                 document.getElementById("tricolore").innerText = "Tricolore di Panigacci. \n Panigacci serviti con olio e grana, pesto e sugo di funghi";
-                document.getElementById("Tagliere piccolo").innerText = "Tagliere piccolo";
+                document.getElementById("Tagliere piccolo").innerText = "Tagliere piccolo";*/
                 currentLang = "it";
             }
         }
