@@ -19,9 +19,9 @@
     </header>
 <div class="container">
     <div class="tab-buttons">
-        <button onclick="openTab('antipasti')">Antipasti</button>
-        <button onclick="openTab('primi')">Panigacci</button>
-        <button onclick="openTab('dolci')">Dolci</button>
+        <button onclick="openTab('antipasti', this)">Antipasti</button>
+        <button onclick="openTab('primi', this)">Panigacci</button>
+        <button onclick="openTab('dolci', this)">Dolci</button>
     </div>
 
 <!-- TAB 1 -->
@@ -121,7 +121,7 @@
     document.getElementById(tabName).style.display = "block";
 } */
 
-        function openTab(tabName) {
+        function openTab(tabName, button) {
     // nasconde tutti i tab
     document.getElementById("antipasti").style.display = "none";
     document.getElementById("primi").style.display = "none";
@@ -134,7 +134,7 @@
     document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
 
     // aggiunge active al pulsante cliccato
-    event.currentTarget.classList.add('active');
+    button.classList.add('active');
 }
     </script>
 
