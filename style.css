@@ -89,26 +89,25 @@ footer {
 }
 
 /* Bottoni dei tab */
-/*.tab-buttons {
+.tab-buttons {
     display: flex;
     justify-content: center;
     gap: 3px;
     padding: 5px 0;
     flex-shrink: 0;
     margin-bottom: 20px; /* spazio tra bottoni e tab content */
-}*/
-.tab-buttons {
+}
+/*.tab-buttons {
    display: flex;
     flex-wrap: wrap;           /* permette più righe */
     justify-content: center;   /* centra i bottoni in ogni riga */
     row-gap: 15px;             /* spazio verticale tra le righe */
     column-gap: 20px;          /* spazio orizzontale tra i bottoni */
     margin-bottom: 20px;
-}
+}  */
 
 .tab-buttons > button {
-     flex: 0 0 calc(50% - 10px); /* due bottoni per riga considerando il gap */
-    max-width: 200px;            /* opzionale: dimensione massima */
+    max-width: 180px;            /* opzionale: dimensione massima */
     height: 50px;
     text-align: center;
     font-family: Courier, sans-serif;
