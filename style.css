@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Decima';
+    src: url('Decima Round W01 A Regular.ttf') format('ttf')
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Impostazioni base */
 html, body {
     height: 100%;
@@ -8,7 +15,7 @@ body {
     background: url('Via Prione3.png');
     background-attachment: fixed;
     background-size: contain;
-    font-family: Courier, sans-serif;
+    font-family: Decima, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
