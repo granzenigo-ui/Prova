@@ -19,17 +19,15 @@
     </header>
 <div class="container">
     <div class="tab-buttons">
-        <button onclick="openTab('antipasti', this)">Antipasti</button>
-        <button onclick="openTab('primi', this)">Primi piatti</button>
+        <button onclick="openTab('antipasti', this)">Antipasti e primi</button>
         <button onclick="openTab('panigacci', this)">Panigacci</button>
         <button onclick="openTab('dolci', this)">Dolci</button>
         <button onclick="openTab('bevande', this)">Bevande</button>
-        <button onclick="openTab('vini', this)">Vini</button>
     </div>
 
 <!-- TAB Antipasti -->
 <div id="antipasti" class="tab-content active">
-    <h2 id="antipasti-title">Antipasti</h2>
+    <h2 id="antipasti-title">Antipasti e primi piatti</h2>
 
     <div class="item">
         <span id="Torchiara olio e grana">Torchiara olio e grana</span>
@@ -39,21 +37,6 @@
     <div class="item">
         <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
         <span>€10</span>
-    </div>
-</div>
-
-<!-- TAB 2 -->
-<div id="primi" class="tab-content" style="display:none;">
-    <h2 id="primi-title">Primi piatti</h2>
-
-    <div class="item">
-        <span id="tricolore">Panigacci a volontà</span>
-        <span>€5 a persona</span>
-    </div>
-
-    <div class="item">
-        <span id="Tagliere piccolo">Tagliere di salumi misto, consigliato per due persone</span>
-        <span>€12</span>
     </div>
 </div>
 
@@ -96,22 +79,7 @@
 
 <!-- TAB Bevande -->
 <div id="bevande" class="tab-content" style="display:none;">
-    <h2 id="bevande-title">Bevande</h2>
-
-    <div class="item">
-        <span id="Torchiara olio e grana">Torchiara olio e grana</span>
-        <span>€10</span> 
-    </div>
-
-    <div class="item">
-        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
-        <span>€10</span>
-    </div>
-</div>
-
-<!-- TAB Vini -->
-<div id="vini" class="tab-content" style="display:none;">
-    <h2 id="vini-title">Vini</h2>
+    <h2 id="bevande-title">Bevande e vini</h2>
 
     <div class="item">
         <span id="Torchiara olio e grana">Torchiara olio e grana</span>
@@ -163,11 +131,9 @@
 
        /* function openTab(tabName) {
     document.getElementById("antipasti").style.display = "none";
-    document.getElementById("primi").style.display = "none";
     document.getElementById("panigacci").style.display = "none";
     document.getElementById("dolci").style.display = "none";
     document.getElementById("bevande").style.display = "none";
-    document.getElementById("vini").style.display = "none";
 
     document.getElementById(tabName).style.display = "block";
 } */
@@ -175,12 +141,9 @@
         function openTab(tabName, button) {
     // nasconde tutti i tab
     document.getElementById("antipasti").style.display = "none";
-    document.getElementById("primi").style.display = "none";
     document.getElementById("panigacci").style.display = "none";
     document.getElementById("dolci").style.display = "none";
     document.getElementById("bevande").style.display = "none";
-    document.getElementById("vini").style.display = "none";
-
 
 
 
