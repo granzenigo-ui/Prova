@@ -89,3 +89,32 @@ body {
     background: rgba(255, 255, 255, 0.35); 
     padding: 20px;
 }
+
+* Stile base dei bottoni */
+.tab-buttons button {
+    background: linear-gradient(135deg, #E69D11, #FFA500); /* sfumatura gialla/arancione */
+    border: none;
+    border-radius: 25px;           /* arrotondati */
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;     /* animazioni dolci */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* leggero rilievo */
+    margin: 0 10px;                /* distanza tra bottoni */
+}
+
+/* Hover: effetto evidenziazione */
+.tab-buttons button:hover {
+    transform: translateY(-3px) scale(1.05); /* piccolo movimento verso l’alto e leggero ingrandimento */
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #FFB733, #FFD27F); /* sfumatura più chiara */
+}
+
+/* Pulsante attivo (quando il tab è aperto) */
+.tab-buttons button.active {
+    background: linear-gradient(135deg, #FFA500, #E69D11);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
