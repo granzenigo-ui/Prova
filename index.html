@@ -18,7 +18,7 @@
         <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
     </header>
 <div class="container">
-    <div>
+    <div class="tab-buttons">
         <button onclick="openTab('antipasti')">Antipasti</button>
         <button onclick="openTab('primi')">Panigacci</button>
         <button onclick="openTab('dolci')">Dolci</button>
@@ -112,13 +112,29 @@
             navigator.serviceWorker.register("service-worker.js");
         }
 
-        function openTab(tabName) {
+       /* function openTab(tabName) {
     document.getElementById("antipasti").style.display = "none";
     document.getElementById("primi").style.display = "none";
             
     document.getElementById("dolci").style.display = "none";
 
     document.getElementById(tabName).style.display = "block";
+} */
+
+        function openTab(tabName) {
+    // nasconde tutti i tab
+    document.getElementById("antipasti").style.display = "none";
+    document.getElementById("primi").style.display = "none";
+    document.getElementById("dolci").style.display = "none";
+
+    // mostra quello selezionato
+    document.getElementById(tabName).style.display = "block";
+
+    // rimuove active da tutti i bottoni
+    document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
+
+    // aggiunge active al pulsante cliccato
+    event.currentTarget.classList.add('active');
 }
     </script>
 
