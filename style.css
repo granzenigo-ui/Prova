@@ -59,13 +59,11 @@ body {
             text-align: center;
             padding: 15px;
             font-size: 12px;
-           background: rgba(255, 255, 255, 0.55); /* meno opaco */
+           background: rgba(255, 255, 255, 0.35); 
     padding: 20px;
-    border-radius: 15px;
         }
 
 .tab-content {
-    background: rgba(255, 255, 255, 0.55); /* meno opaco */
+    background: rgba(255, 255, 255, 0.35); 
     padding: 20px;
-    border-radius: 15px;
 }
