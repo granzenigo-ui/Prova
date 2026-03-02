@@ -102,12 +102,6 @@ body {
     margin: 0 10px;                /* distanza tra bottoni */
 }
 
-/* Hover: effetto evidenziazione */
-.tab-buttons button:hover {
-    transform: translateY(-3px) scale(1.05); /* piccolo movimento verso l’alto e leggero ingrandimento */
-    background: linear-gradient(135deg, #FFB733, #FFD27F); /* sfumatura più chiara */
-}
-
 /* Pulsante attivo (quando il tab è aperto) */
 .tab-buttons button.active {
   background: #E69D11;
