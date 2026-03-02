@@ -108,7 +108,7 @@ footer {
 .tab-buttons > button {
     font-family: Courier, sans-serif;
     /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
-    background: rgba(230, 157, 17, 0.35);
+    background: rgba(230, 157, 17, 0.65);
     border: none;
     border-radius: 25px;
     color: black;
