@@ -1,311 +1,134 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOW Panigacci - Menu</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#E69D11">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOW Panigacci - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#E69D11">
 </head>
-    
+
 <body>
 
-    <header>
-        <img src="IMG_3114-ai-brush-removebg-jnum2b6s.png" alt="Logo WOW Panigacci">
-        <h1 id="title">Menù</h1>
-    </header>
-<div class="container">
+  <header>
+    <img src="IMG_3114-ai-brush-removebg-jnum2b6s.png" alt="Logo WOW Panigacci">
+    <h1 id="title">Menù</h1>
+  </header>
+
+  <div class="container">
+
     <div class="tab-buttons">
-        <button onclick="openTab('antipasti', this)">Antipasti e primi</button>
-        <button onclick="openTab('panigacci', this)">Panigacci di Podenzana</button>
-        <button onclick="openTab('dolci', this)">Dolci</button>
-        <button onclick="openTab('bevande', this)">Bevande e vini</button>
+      <button onclick="openTab('antipasti', this)">Antipasti e primi</button>
+      <button onclick="openTab('panigacci', this)">Panigacci di Podenzana</button>
+      <button onclick="openTab('dolci', this)">Dolci</button>
+      <button onclick="openTab('bevande', this)">Bevande e vini</button>
     </div>
 
-<!-- TAB Antipasti e Primi-->
-    
-<div id="antipasti" class="tab-content active">
-    <h2 id="antipasti-title">Antipasti</h2>
+    <!-- TAB Antipasti -->
+    <div id="antipasti" class="tab-content active">
+      <h2 id="antipasti-title">Antipasti</h2>
 
-    <div class="item">
-        <span id="Torchiara olio e grana">Torchiara olio e grana</span>
-        <span class="prezzo">€10,00</span> 
-    </div>
-
-    <div class="item">
-        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
+      <div class="item">
+        <span>Torchiara olio e grana</span>
         <span class="prezzo">€10,00</span>
-    </div>
-    <h2 id="primi-title">Primi piatti</h2>
-    <div class="item">
-        <span id="Tricolore">Tricolore di Panigacci</span>
+      </div>
+
+      <div class="item">
+        <span>Torchiara olio e grana e pesto</span>
         <span class="prezzo">€10,00</span>
-    </div>
+      </div>
 
-    <div class="item">
-        <span id="Tris di Panigacci al pesto">Tris di Panigacci al pesto</span>
+      <h2 id="primi-title">Primi piatti</h2>
+
+      <div class="item">
+        <span>Tricolore di Panigacci</span>
         <span class="prezzo">€10,00</span>
+      </div>
     </div>
 
-    <div class="item">
-        <span id="Tris di Panigacci al sugo di funghi">Tris di Panigacci al sugo di funghi</span>
-        <span class="prezzo">€10,00</span>
-    </div>
+    <!-- TAB Panigacci -->
+    <div id="panigacci" class="tab-content" style="display:none;">
+      <h2 id="panigacci-title">Panigacci di Podenzana</h2>
 
-    <div class="item">
-        <span id="Tris di Panigacci olio e grana">Tris di Panigacci olio e grana</span>
-        <span class="prezzo">€10,00</span>
+      <div class="item">
+        <span>Panigacci Wow a volontà</span>
+        <span class="prezzo">€5,00<br>a persona</span>
+      </div>
     </div>
-    
-</div>
-
-    
-
-<!-- TAB Panigacci -->
-<div id="panigacci" class="tab-content" style="display:none;">
-    <h2 id="panigacci-title">Panigacci di Podenzana</h2>
-
-    <div class="item">
-        <span id="Panigacci Wow">Panigacci Wow a volontà</span>
-        <span class="prezzo">€5,00<br>a persona</span> 
-    </div>
-
-    <div class="item">
-        <span id="Tagliere di salumi piccolo">Tagliere di salumi piccolo<br>(2 persone)</span>
-        <span class="prezzo">€14,00</span>
-    </div>
-    
-    <div class="item">
-        <span id="Tagliere di salumi medio">Tagliere di salumi medio<br>(3 persone)</span>
-        <span class="prezzo">€24,00</span>
-    </div>
-
-     <div class="item">
-        <span id="Tagliere di salumi grande">Tagliere di salumi grande<br>(4-5 persone)</span>
-        <span class="prezzo">€32,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Stracchino">Stracchino</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Gorgonzola">Gorgonzola</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-    
-    <div class="item">
-        <span id="Verdure grigliate">Verdure grigliate</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-    
-    <div class="item">
-        <span id="Uovo al testo">Uovo al testo</span>
-        <span class="prezzo">€3,50</span>
-    </div>
-
-    
-    <div class="item">
-        <span id="Chiodo">Chiodo</span>
-        <span class="prezzo">€7,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Mortaio di pesto">Mortaio di pesto</span>
-        <span class="prezzo">€4,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Lardo di Colonnata">Lardo di Colonnata</span>
-        <span class="prezzo">€7,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Porchetta di Ariccia IGP">Porchetta di Ariccia IGP</span>
-        <span class="prezzo">€10,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Prosciutto cotto Rovagnati">Prosciutto cotto Rovagnati</span>
-        <span class="prezzo">€10,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Patatine fritte">Patatine fritte</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-
-    
-</div>
 
     <!-- TAB Dolci -->
-<div id="dolci" class="tab-content" style="display:none;">
-    <h2 id="dolci-title">Dolci</h2>
+    <div id="dolci" class="tab-content" style="display:none;">
+      <h2 id="dolci-title">Dolci</h2>
 
-    <div class="item">
-        <span id="Sorbetto al limone">Sorbetto al limone</span>
+      <div class="item">
+        <span>Sorbetto al limone</span>
         <span class="prezzo">€4,50</span>
+      </div>
     </div>
 
-    <div class="item">
-        <span id="Panigacci con Nutella">Panigacci con Nutella</span>
-        <span class="prezzo">€2,00</span>
+    <!-- TAB Bevande -->
+    <div id="bevande" class="tab-content" style="display:none;">
+      <h2 id="bevande-title">Bevande</h2>
+
+      <div class="item">
+        <span>Acqua Naturale/Frizzante</span>
+        <span class="prezzo">€2,50</span>
+      </div>
     </div>
 
-    <div class="item">
-        <span id="Coppa WOW">Coppa WOW</span>
-        <span class="prezzo">€6,00</span>
-    </div>
+  </div>
 
-    <div class="item">
-        <span id="Cantucci e Vin Santo">Cantucci e Vin Santo</span>
-        <span class="prezzo">€7,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Affogato al caffè">Affogato al caffè</span>
-        <span class="prezzo">€6,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Frittelle di mele">Frittelle di mele</span>
-        <span class="prezzo">€7,00</span>
-    </div>
-</div>
-
-<!-- TAB Bevande -->
-<div id="bevande" class="tab-content" style="display:none;">
-    <h2 id="bevande-title">Bevande</h2>
-
-    <div class="item">
-        <span id="Acqua Naturale/Frizzante">Acqua Naturale/Frizzante</span>
-        <span class="prezzo">€2,50</span> 
-    </div>
-
-    <div class="item">
-        <span id="Acqua Naturale/Frizzante">Acqua Naturale/Frizzante</span>
-        <span class="prezzo">€2,50</span> 
-    </div>
-    <div class="item">
-        <span id="Bibita">Bibita</span>
-        <span class="prezzo">€3,00</span> 
-    </div>
-    <div class="item">
-        <span id="Calice di vino WOW">Calice di vino WOW</span>
-        <span class="prezzo">€5,00</span> 
-    </div>
-    <div class="item">
-        <span id="Aperol Spritz">Aperol Spritz</span>
-        <span class="prezzo">€7,00</span> 
-    </div>
-    
-<h2 id="vini-title">Vini</h2>
-    <div class="item">
-        <span id="Torchiara olio e grana e pesto">Torchiara olio e grana e pesto</span>
-        <span class="prezzo">€10</span>
-    </div>
-    <h2 id="birre-title">Birre</h2>
-    
-    <div class="item">
-        <span id="Ichnusa non filtrata - 0,33">Ichnusa non filtrata - 0,33</span>
-        <span class="prezzo">€4,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Franziskaner Weissbier - 0,5">Franziskaner Weissbier - 0,5</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Birra Moretti - 0,66">Birra Moretti - 0,66</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-
-    <div class="item">
-        <span id="Birra Moretti Rossa - 0,33">Birra Moretti Rossa - 0,33</span>
-        <span class="prezzo">€5,00</span>
-    </div>
-</div>
-
-    
-</div>
-
-</div>
-    
-        <footer>
-            Coperto €2,50 <br><br>
-        I prodotti contrassegnati da * potrebbero essere surgelati.<br><br>
-    Per la consultazione degli allergeni, rivolgersi al personale.<br><br><br>
+  <footer>
+    Coperto €2,50 <br><br>
+    I prodotti contrassegnati da * potrebbero essere surgelati.<br><br>
+    Per la consultazione degli allergeni, rivolgersi al personale.<br><br>
     © 2026 WOW Panigacci
-    </footer>
+    <br><br>
+    <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
+  </footer>
 
-    <footer>
-        
-        <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
-         </footer>
+  <script>
+    let currentLang = "it";
 
+    function toggleLang() {
+      if (currentLang === "it") {
+        document.getElementById("title").innerText = "Menù";
+        document.getElementById("antipasti-title").innerText = "Starters";
+        document.getElementById("primi-title").innerText = "First courses";
+        document.getElementById("dolci-title").innerText = "Dessert";
+        document.getElementById("panigacci-title").innerText = "Panigacci from Podenzana";
+        document.getElementById("bevande-title").innerText = "Drinks";
+        currentLang = "en";
+      } else {
+        document.getElementById("title").innerText = "Menù";
+        document.getElementById("antipasti-title").innerText = "Antipasti";
+        document.getElementById("primi-title").innerText = "Primi piatti";
+        document.getElementById("dolci-title").innerText = "Dolci";
+        document.getElementById("panigacci-title").innerText = "Panigacci di Podenzana";
+        document.getElementById("bevande-title").innerText = "Bevande";
+        currentLang = "it";
+      }
+    }
 
-    <script>
-        let currentLang = "it";
+    function openTab(tabName, button) {
+      document.getElementById("antipasti").style.display = "none";
+      document.getElementById("panigacci").style.display = "none";
+      document.getElementById("dolci").style.display = "none";
+      document.getElementById("bevande").style.display = "none";
 
-        function toggleLang() {
-            if (currentLang === "it") { 
-                document.getElementById("title").innerText = "Menù";
-                document.getElementById("antipasti-title").innerText = "Starters";
-                document.getElementById("primi-title").innerText = "First corurses";
-                document.getElementById("dolci-title").innerText = "Dessert";
-                document.getElementById("panigacci-title").innerText = "Panigacci from Podenzana";
-                document.getElementById("bevande-title").innerText = "Drinks";
-                document.getElementById("vini-title").innerText = "Wine";
-                document.getElementById("birre-title").innerText = "Beers";
-                currentLang = "en";
-            } else { 
-                document.getElementById("title").innerText = "Menù";
-                document.getElementById("antipasti-title").innerText = "Antipasti";
-                document.getElementById("primi-title").innerText = "Primi piatti";
-                document.getElementById("dolci-title").innerText = "Dolci";
-                document.getElementById("panigacci-title").innerText = "Panigacci di Podenzana";
-                document.getElementById("bevande-title").innerText = "Bevande";
-                document.getElementById("vini-title").innerText = "Vini";
-                document.getElementById("birre-title").innerText = "Birre";
-                currentLang = "it";
-            }
-        }
+      document.getElementById(tabName).style.display = "block";
 
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
+      document.querySelectorAll('.tab-buttons button')
+        .forEach(btn => btn.classList.remove('active'));
 
-       /* function openTab(tabName) {
-    document.getElementById("antipasti").style.display = "none";
-    document.getElementById("panigacci").style.display = "none";
-    document.getElementById("dolci").style.display = "none";
-    document.getElementById("bevande").style.display = "none";
+      button.classList.add('active');
+    }
 
-    document.getElementById(tabName).style.display = "block";
-} */
-
-        function openTab(tabName, button) {
-    // nasconde tutti i tab
-    document.getElementById("antipasti").style.display = "none";
-    document.getElementById("panigacci").style.display = "none";
-    document.getElementById("dolci").style.display = "none";
-    document.getElementById("bevande").style.display = "none";
-
-
-
-    // mostra quello selezionato
-    document.getElementById(tabName).style.display = "block";
-
-    // rimuove active da tutti i bottoni
-    document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
-
-    // aggiunge active al pulsante cliccato
-    button.classList.add('active');
-}
-    </script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 
 </body>
 </html>
