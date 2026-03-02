@@ -30,7 +30,8 @@ header img {
 }
 
 .lang-btn {
-    background: #E69D11;
+    background: rgba(230, 157, 17, 0.35);
+    /*background: #E69D11;*/
     color: #595959;
     border: none;
     padding: 6px 12px;
@@ -105,7 +106,8 @@ footer {
 
 .tab-buttons > button {
     font-family: Courier, sans-serif;
-    background: linear-gradient(135deg, #FFA500, #E69D11);
+    /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
+    background: rgba(230, 157, 17, 0.35);
     border: none;
     border-radius: 25px;
     color: black;
