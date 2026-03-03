@@ -255,6 +255,7 @@
         function toggleLang() {
             if (currentLang === "it") { 
                 //Titoli
+                
                 document.getElementById("title").innerText = "Menù";
                 document.getElementById("antipasti-title").innerText = "Starters";
                 document.getElementById("primi-title").innerText = "First corurses";
@@ -267,6 +268,7 @@
                 //Elementi
                 document.getElementById("Tricolore").innerText = "Boiled seasoned Panigacci";
                 document.getElementById("Tris di Panigacci al pesto").innerText = "Boiled panigacci seasoned with pesto";
+                document.getElementById("Tris di Panigacci al sugo di funghi").innerText = "Boiled panigacci seasoned with mushrooms";
                 currentLang = "en";
             } else { 
                 //Titoli
@@ -281,6 +283,7 @@
 
                 document.getElementById("Tricolore").innerText = "Tricolore di Panigacci";
                 document.getElementById("Tris di Panigacci al pesto").innerText = "Tris di Panigacci al pesto";
+                document.getElementById("Tris di Panigacci al sugo di funghi").innerText = "Tris di Panigacci al sugo di funghi";
                 currentLang = "it";
             }
         }
