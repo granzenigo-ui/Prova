@@ -5,7 +5,6 @@
     font-style: normal;
 }
 
-/* Impostazioni base */
 html, body {
     height: 100%;
     margin: 0;
@@ -23,12 +22,11 @@ body {
 
 /* Header */
 header {
-    
     color: black;
     text-align: center;
     padding: 20px;
-    flex-shrink: 0; /* non si riduce */
-     background: url('ViaPrione4.png') no-repeat;
+    flex-shrink: 0; 
+     background: url('ViaPrione5.png') no-repeat;
     background-attachment: fixed;
     background-size: contain;
 }
@@ -99,7 +97,7 @@ footer {
     text-align: center;
     font-size: 9px;
     padding: 20px;
-    background: url('ViaPrione4.png') no-repeat;
+    background: url('ViaPrione5.png') no-repeat;
     background-attachment: fixed;
     background-size: contain;
     flex-shrink: 0;
