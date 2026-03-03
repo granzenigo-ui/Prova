@@ -8,6 +8,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -106,7 +107,6 @@ footer {
 .tab-buttons {
     display: flex;
     justify-content: center;
-    text-align: center;
     gap: 3px;
     padding: 3px 0;
     flex-shrink: 0;
@@ -115,9 +115,6 @@ footer {
 
 .tab-buttons > button {
     font-family: Decima, sans-serif;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
      width: 100px;
   height: 100px;
@@ -131,7 +128,6 @@ footer {
     margin: 0 7px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-line-height: 1.2;
 }
 
 .tab-buttons > button:hover {
