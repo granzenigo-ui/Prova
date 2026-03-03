@@ -242,9 +242,11 @@
     
         
         <footer>
-            Coperto €2,50<br><br>
-            I piatti contrassegnati da * potrebbero potrebbero contenere prodotti surgelati.<br><br>
-            Per la consultazione degli allergeni, rivolgersi al personale.<br><br><br><br>
+            <span id="footer">
+                Coperto €2,50<br><br>
+                I piatti contrassegnati da * potrebbero potrebbero contenere prodotti surgelati.<br><br>
+                Per la consultazione degli allergeni, rivolgersi al personale.<br><br><br><br>
+            </span>
                 
             <button class="lang-btn" onclick="toggleLang()">EN / IT</button>
             
@@ -289,9 +291,13 @@
                     document.getElementById("Patatine fritte").innerHTML = "French fries   *";
 
                     //Elementi Dolci
-                    document.getElementById("Panigacci alla Nutella").innerHTML = "Panigacci with Nutella";
+                    document.getElementById("Panigacci con Nutella").innerHTML = "Panigacci with Nutella";
                     document.getElementById("Affogato al caffè").innerHTML = "Vanilla ice cream and coffee   *";
                     document.getElementById("Frittelle di mele").innerHTML = "Apple fritters";
+
+                    //Footer 
+                    document.getElementById("footer").innerHTML = "Cover charge €2.50<br><br>Dishes marked with * may contain frozen products.<br><br>For allergen information, please ask the staff.<br><br><br><br>";
+
                     
                     currentLang = "en";
                 } else { 
@@ -324,9 +330,12 @@
                     document.getElementById("Patatine fritte").innerHTML = "Patatine fritte   *";
 
                     //Elementi Dolci
-                    document.getElementById("Panigacci alla Nutella").innerHTML = "Panigacci alla Nutella";
+                    document.getElementById("Panigacci con Nutella").innerHTML = "Panigacci con Nutella";
                     document.getElementById("Affogato al caffè").innerHTML = "Affogato al caffè   *";
                     document.getElementById("Frittelle di mele").innerHTML = "Frittelle di mele";
+
+                    //Footer    
+                    document.getElementById("footer").innerHTML = "Coperto €2,50<br><br>I piatti contrassegnati da * potrebbero potrebbero contenere prodotti surgelati.<br><br>Per la consultazione degli allergeni, rivolgersi al personale.<br><br><br><br>";
                     
                     currentLang = "it";
                 }
