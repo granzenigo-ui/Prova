@@ -50,7 +50,7 @@ header img {
 .container {
    
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     flex: 1;
     width: 100vw;      /* 100% della finestra */
   box-sizing: border-box; /* include padding nella larghezza */
