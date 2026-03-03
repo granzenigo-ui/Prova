@@ -8,7 +8,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -119,6 +118,7 @@ footer {
      width: 100px;
   height: 100px;
   border-radius: 50%; /* Crea la forma circolare */
+    aspect-ratio: 1 / 1;
     background: rgba(228, 153, 6, 0.85);
     border: none;
     /*border-radius: 25px;*/
