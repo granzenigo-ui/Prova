@@ -88,19 +88,10 @@ footer {
     text-align: center;
     font-size: 9px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.35);
     flex-shrink: 0;
-}
-
-.footer2 {
-    color: black;
-    text-align: center;
-    font-size: 9px;
-    padding: 20px;
     background: url('ViaPrione6.png') no-repeat;
     background-attachment: fixed;
     background-size: contain;
-    flex-shrink: 0;
 }
 
 /* Tab content full-width */
