@@ -26,7 +26,7 @@ header {
     text-align: center;
     padding: 20px;
     flex-shrink: 0; 
-     background: url('ViaPrione6.png') no-repeat;
+    background: url('ViaPrione6.png') no-repeat;
     background-attachment: fixed;
     background-size: contain;
 }
@@ -42,7 +42,7 @@ header img {
     border: none;
     padding: 6px 12px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 9px;
     margin-top: 10px;
 }
 
@@ -86,7 +86,7 @@ span.prezzo {
 footer {
     color: black;
     text-align: center;
-    font-size: 9px;
+    font-size: 7px;
     padding: 20px;
     flex-shrink: 0;
 }
