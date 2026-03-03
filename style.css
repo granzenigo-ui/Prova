@@ -70,14 +70,14 @@ h2 {
 .item {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
+    padding-right: 10px;
     margin: 8px 0;
     border-bottom: 1px dashed #ccc;
     padding-bottom: 4px;
 }
 
 span.prezzo {
-    font-size: 14px;
+    font-size: 13px;
     text-align: right;
     display: inline-block;
 }
@@ -96,9 +96,9 @@ footer {
     flex: 1; /* occupa tutto lo spazio disponibile */
     width: 100%;
     background: rgba(255, 255, 255, 0.45);
-    padding: 20px 40px; /* padding verticale + orizzontale */
+    padding: 10px 10px; /* padding verticale + orizzontale */
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     overflow-y: auto; /* scroll solo se troppo lungo */
 }
 
