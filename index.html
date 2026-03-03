@@ -69,7 +69,7 @@
 
     <div class="item">
         <span id="Panigacci Wow">Panigacci Wow a volontà</span>
-        <span class="prezzo">€5,00<br>a persona</span> 
+        <span id="prezzo panigacci" class="prezzo">€5,00<br>a persona</span> 
     </div>
 
     <div class="item">
@@ -265,11 +265,16 @@
                 document.getElementById("vini-title").innerText = "Wine";
                 document.getElementById("birre-title").innerText = "Beers";
 
-                //Elementi
+                //Elementi Antipasti e Primi
                 document.getElementById("Tricolore").innerText = "Boiled seasoned Panigacci";
-                document.getElementById("Tris di Panigacci al pesto").innerText = "Boiled panigacci seasoned with pesto";
-                document.getElementById("Tris di Panigacci al sugo di funghi").innerText = "Boiled panigacci seasoned with mushrooms";
-                document.getElementById("Tris di Panigacci olio e grana").innerText = "Boiled panigacci seasoned with oil and cheese";
+                document.getElementById("Tris di Panigacci al pesto").innerText = "Boiled Panigacci seasoned with pesto";
+                document.getElementById("Tris di Panigacci al sugo di funghi").innerText = "Boiled Panigacci seasoned with mushrooms";
+                document.getElementById("Tris di Panigacci olio e grana").innerText = "Boiled Panigacci seasoned with oil and cheese";
+
+                //Elementi Panigacci
+                document.getElementById("Panigacci Wow").innerText = "Panigacci all you can eat";
+                document.getElementById("prezzo panigacci").innerText = "per person";
+                
                 currentLang = "en";
             } else { 
                 //Titoli
@@ -282,10 +287,18 @@
                 document.getElementById("vini-title").innerText = "Vini";
                 document.getElementById("birre-title").innerText = "Birre";
 
+                //Elementi Antipasti e Primi
                 document.getElementById("Tricolore").innerText = "Tricolore di Panigacci";
                 document.getElementById("Tris di Panigacci al pesto").innerText = "Tris di Panigacci al pesto";
                 document.getElementById("Tris di Panigacci al sugo di funghi").innerText = "Tris di Panigacci al sugo di funghi";
                 document.getElementById("Tris di Panigacci olio e grana").innerText = "Tris di Panigacci olio e grana";
+
+                //Elementi Panigacci
+                document.getElementById("Panigacci Wow").innerText = "Panigacci Wow a volontà";
+                document.getElementById("prezzo panigacci").innerText = "a persona";
+                
+                
+                
                 currentLang = "it";
             }
         }
