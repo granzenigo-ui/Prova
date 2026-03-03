@@ -89,9 +89,6 @@ footer {
     font-size: 9px;
     padding: 20px;
     flex-shrink: 0;
-    background: url('ViaPrione6.png') no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
 }
 
 /* Tab content full-width */
