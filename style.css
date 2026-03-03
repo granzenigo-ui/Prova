@@ -11,16 +11,12 @@ html, body {
 }
 
 body {
-    /*background: url('Via Prione3.png');
-    background-attachment: fixed;
-    background-size: contain;*/
     font-family: Decima, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header */
 header {
     color: black;
     text-align: center;
@@ -42,21 +38,18 @@ header img {
     border: none;
     padding: 6px 12px;
     cursor: pointer;
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 10px;
 }
 
-/* Container principale */
 .container {
-   
     margin: auto;
     padding: 10px;
     flex: 1;
-    width: 100vw;      /* 100% della finestra */
-  box-sizing: border-box; /* include padding nella larghezza */
+    width: 100vw; 
+    box-sizing: border-box; 
 }
 
-/* Sezioni e titoli */
 section {
     margin-bottom: 30px;
 }
@@ -66,7 +59,6 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Item menu */
 .item {
     display: flex;
     justify-content: space-between;
@@ -82,7 +74,6 @@ span.prezzo {
     display: inline-block;
 }
 
-/* Footer fisso in basso */
 footer {
     color: black;
     text-align: center;
@@ -91,38 +82,36 @@ footer {
     flex-shrink: 0;
 }
 
-/* Tab content full-width */
 .tab-content {
-    flex: 1; /* occupa tutto lo spazio disponibile */
+    flex: 1; 
     width: 100%;
     background: rgba(255, 255, 255, 0.45);
-    padding: 10px 10px; /* padding verticale + orizzontale */
+    padding: 10px 10px; 
     box-sizing: border-box;
     margin-bottom: 10px;
-    overflow-y: auto; /* scroll solo se troppo lungo */
+    overflow-y: auto; 
 }
 
-/* Bottoni dei tab */
 .tab-buttons {
     display: flex;
     justify-content: center;
     gap: 2px;
     padding: 2px 0;
     flex-shrink: 0;
-    margin-bottom: 15px; /* spazio tra bottoni e tab content */
+    margin-bottom: 15px; 
 }
 
 .tab-buttons > button {
     font-family: Decima, sans-serif;
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Crea la forma circolare */
+    border-radius: 50%;
     aspect-ratio: 1 / 1;
     background: rgba(228, 153, 6, 0.85);
     border: none;
     color: black;
     padding: 2px 5px;
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 5px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -133,9 +122,7 @@ footer {
     box-shadow: 0 6px 10px rgba(0,0,0,0.25);
 }
 
-/* Bottoni attivi */
 .tab-buttons > button.active {
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
     transform: scale(1.05);
 }
-
