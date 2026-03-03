@@ -115,8 +115,8 @@ footer {
 .tab-buttons > button {
     font-family: Decima, sans-serif;
     /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
-     width: 100px;
-  height: 100px;
+     width: 80px;
+  height: 80px;
   border-radius: 50%; /* Crea la forma circolare */
     aspect-ratio: 1 / 1;
     background: rgba(228, 153, 6, 0.85);
