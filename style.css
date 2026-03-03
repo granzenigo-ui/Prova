@@ -28,7 +28,7 @@ header {
     text-align: center;
     padding: 20px;
     flex-shrink: 0; /* non si riduce */
-     background: url('Via Prione3.png');
+     background: url('ViaPrione4.png');
     background-attachment: fixed;
     background-size: contain;
 }
@@ -91,6 +91,17 @@ footer {
     font-size: 9px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.35);
+    flex-shrink: 0;
+}
+
+.footer2 {
+    color: black;
+    text-align: center;
+    font-size: 9px;
+    padding: 20px;
+    background: url('ViaPrione4.png');
+    background-attachment: fixed;
+    background-size: contain;
     flex-shrink: 0;
 }
 
