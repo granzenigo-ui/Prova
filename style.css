@@ -28,7 +28,7 @@ header {
     flex-shrink: 0; 
      background: url('ViaPrione6.png') no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 }
 
 header img {
@@ -99,7 +99,7 @@ footer {
     padding: 20px;
     background: url('ViaPrione6.png') no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     flex-shrink: 0;
 }
 
