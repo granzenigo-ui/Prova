@@ -106,26 +106,24 @@ footer {
 .tab-buttons {
     display: flex;
     justify-content: center;
-    gap: 3px;
-    padding: 3px 0;
+    gap: 2px;
+    padding: 2px 0;
     flex-shrink: 0;
     margin-bottom: 15px; /* spazio tra bottoni e tab content */
 }
 
 .tab-buttons > button {
     font-family: Decima, sans-serif;
-    /*background: linear-gradient(135deg, #FFA500, #E69D11);*/
-     width: 80px;
-  height: 80px;
-  border-radius: 50%; /* Crea la forma circolare */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Crea la forma circolare */
     aspect-ratio: 1 / 1;
     background: rgba(228, 153, 6, 0.85);
     border: none;
-    /*border-radius: 25px;*/
     color: black;
-    padding: 3px 7px;
-    font-size: 15px;
-    margin: 0 7px;
+    padding: 2px 5px;
+    font-size: 13px;
+    margin: 0 5px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
