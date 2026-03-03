@@ -23,12 +23,14 @@ body {
 
 /* Header */
 header {
-    background-attachment: fixed;
-    background-size: contain;
+    
     color: black;
     text-align: center;
     padding: 20px;
     flex-shrink: 0; /* non si riduce */
+     background: url('Via Prione3.png');
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 header img {
@@ -48,9 +50,7 @@ header img {
 
 /* Container principale */
 .container {
-    background: url('Via Prione3.png');
-    background-attachment: fixed;
-    background-size: contain;
+   
     margin: auto;
     padding: 20px;
     flex: 1;
